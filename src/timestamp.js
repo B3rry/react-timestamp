@@ -39,7 +39,7 @@ class Timestamp extends React.Component {
       compare_to = new Date();
     }
 
-    var seconds = Math.floor((compare_to.getTime() - date.getTime()) / 1000);
+    var seconds = Math.floor((compare_to - date.getTime() / 1000));
     var is_ago = seconds >= 0;
 
     seconds = Math.abs(seconds);
